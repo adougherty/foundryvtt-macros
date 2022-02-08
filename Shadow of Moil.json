@@ -1,0 +1,223 @@
+{
+  "name": "Shadow of Moil",
+  "type": "spell",
+  "img": "icons/commodities/gems/pearl-swirl-teal.webp",
+  "data": {
+    "description": {
+      "value": "<p class=\"Core-Styles_Core-Body\">Flame-like shadows wreathe your body until the spell ends, causing you to become heavily obscured to others. The shadows turn dim light within 10 feet of you into darkness, and bright light in the same area to dim light.</p>\n<p class=\"Core-Styles_Core-Body\">Until the spell ends, you have resistance to radiant damage. In addition, whenever a creature within 10 feet of you hits you with an attack, the shadows lash out at that creature, dealing it 2d8 necrotic damage.</p>",
+      "chat": "<p class=\"Core-Styles_Core-Body\">Flame-like shadows wreathe your body until the spell ends, causing you to become heavily obscured to others. The shadows turn dim light within 10 feet of you into darkness, and bright light in the same area to dim light.</p>\n<p class=\"Core-Styles_Core-Body\">Until the spell ends, you have resistance to radiant damage. In addition, whenever a creature within 10 feet of you hits you with an attack, the shadows lash out at that creature, dealing it 2d8 necrotic damage.</p>",
+      "unidentified": ""
+    },
+    "source": "Xanathar's Guide to Everything pg 164",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "other",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "",
+          "necrotic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "2d8[necrotic - In response to being hit by an attack.]",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 4,
+    "school": "nec",
+    "components": {
+      "value": "an undead eyeball encased in a gem worth at least 150 gp",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "an undead eyeball encased in a gem worth at least 150 gp",
+      "consumed": false,
+      "cost": 150,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": true
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "attunement": null
+  },
+  "effects": [
+    {
+      "_id": "nVcdqwskY182YDOa",
+      "changes": [
+        {
+          "key": "flags.midi-qol.grants.disadvantage.attack.mwak",
+          "mode": 2,
+          "value": "0",
+          "priority": "20"
+        },
+        {
+          "key": "ATL.light.dim",
+          "mode": 2,
+          "value": "-10",
+          "priority": "20"
+        },
+        {
+          "key": "macro.itemMacro",
+          "mode": 0,
+          "value": "0",
+          "priority": "20"
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 60
+      },
+      "icon": "icons/commodities/gems/pearl-swirl-teal.webp",
+      "label": "Shadow of Moil",
+      "origin": "Item.Az63xUGTnwHj0iQW",
+      "transfer": false,
+      "flags": {
+        "core": {
+          "statusId": ""
+        },
+        "dae": {
+          "stackable": "none",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e-helpers": {
+          "rest-effect": "Ignore"
+        }
+      },
+      "tint": null,
+      "selectedKey": [
+        "flags.midi-qol.grants.disadvantage.attack.mwak",
+        "ATL.light.dim",
+        "macro.itemMacro"
+      ]
+    }
+  ],
+  "flags": {
+    "ddbimporter": {
+      "id": 138228,
+      "definitionId": 14596,
+      "entityTypeId": 435869154,
+      "dndbeyond": {
+        "lookup": "generic",
+        "lookupName": "generic",
+        "level": null,
+        "castAtLevel": null
+      },
+      "sources": [
+        {
+          "sourceId": 27,
+          "pageNumber": 164,
+          "sourceType": 1
+        }
+      ],
+      "tags": [
+        "Damage",
+        "Buff"
+      ]
+    },
+    "betterRolls5e": {
+      "quickVersatile": {
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Compendium.world.ddb-skt-wed-spells.YWN22hUnYK4e9VSv"
+    },
+    "enhanced-terrain-layer": {
+      "multiple": 1,
+      "min": 0,
+      "max": 0,
+      "environment": "",
+      "elevation": null,
+      "depth": null
+    },
+    "midi-qol": {
+      "effectActivation": false
+    },
+    "itemacro": {
+      "macro": {
+        "data": {
+          "_id": null,
+          "name": "Shadow of Moil",
+          "type": "script",
+          "author": "MWU4NThjY2JiNGI2",
+          "img": "icons/svg/dice-target.svg",
+          "scope": "global",
+          "command": "const lastArg = args[args.length - 1];\nconst tactor = (lastArg.tokenId)\n    ? canvas.tokens.get(lastArg.tokenId).actor\n    : game.actors.get(lastArg.actorId);\nconsole.log(\"Setting: \" + tactor)\nasync function wait(ms) { return new Promise(resolve => { setTimeout(resolve, ms); }); }\nconst target = canvas.tokens.get(lastArg.tokenId);\nconst itemD = lastArg.efData.flags.dae.itemData;\nconst tokenD = canvas.tokens.get(lastArg.efData.flags.dae.tokenId);\nconst sequencer = game.modules.get(\"sequencer\") ? true : false;\n\nif (args[0] === \"on\") {\n    let hookId = Hooks.on(\"midi-qol.preCheckHits\", hitCheck);\n    DAE.setFlag(tactor, \"HexLMonitor\", hookId);\n}\n    \nif (args[0] === \"off\") {\n    let hookId = DAE.getFlag(tactor, \"HexLMonitor\");\n    Hooks.off(\"midi-qol.preCheckHits\", hookId);\n    DAE.unsetFlag(tactor, \"HexLMonitor\");\n}\n\nasync function hitCheck(workflow) {\n    console.log('HERE');\n    console.log(workflow)\n    console.log(workflow.hitTargets);\n    let hit = false;\n    for (let t of workflow.hitTargets) {\n        if(t.data.actorId == tactor.id) {\n            if (['rwak','mwak','rsak','msak']) {\n                console.log('HIT with attack. Attack back');\n            }\n        }\n    }\n    /*\n    await wait(1000);    \n    let attackWorkflow = await workflow.damageList.map((i) => ({ newHP: i?.newHP, tokenId: i?.tokenId })).filter(i => (i.tokenId === target.id) || (i.tokenId === tokenD.id));\n    let lastAttack = attackWorkflow[attackWorkflow.length - 1];\n    let effectId = tactor.effects.find(i => i.data.label === \"Hex\").id;\n    if (lastAttack?.newHP > 0) return {};\n    if (effectId) await MidiQOL.socket().executeAsGM(\"removeEffects\", { actorUuid: tactor.uuid, effects: [effectId] });\n    */\n}",
+          "folder": null,
+          "sort": 0,
+          "permission": {
+            "default": 0
+          },
+          "flags": {}
+        }
+      }
+    },
+    "exportSource": {
+      "world": "skt-wed",
+      "system": "dnd5e",
+      "coreVersion": "9.249",
+      "systemVersion": "1.5.6"
+    }
+  }
+}
